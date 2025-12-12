@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>CrowdWorks Jobs Viewer</title>
+
+<!-- DataTables CSS -->
+<link rel="stylesheet" 
+ href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h1>CW Jobs Viewer</h1>
+<p>検索・並び替えができます。</p>
+
+<table id="jobsTable" class="display" style="width:100%">
+  <thead>
+    <tr>
+        <th>タイトル</th>
+        <th>カテゴリ</th>
+        <th>金額</th>
+        <th>依頼者</th>
+        <th>URL</th>
+        <th style="display:none;">本文全文</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+<!-- DataTables JS -->
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+
+<script src="app.js"></script>
+
+</body>
+</html>
